@@ -1,5 +1,6 @@
 name = "John Smith"
 print(name)
+
 def payroll():
   name = ""
   position = ""
@@ -14,5 +15,7 @@ def payroll():
   salary = str(hrs_worked * rate_p_hr)
 
   print(name+" is a "+position+" and has earned a salary of $"+salary)
+  
 payroll()
+
 print(name)
