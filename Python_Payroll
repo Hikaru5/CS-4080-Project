@@ -1,13 +1,18 @@
-name = ""
-position = ""
-hrs_worked = 0
-rate_p_hr = 0
+name = "John Smith"
+print(name)
+def payroll():
+  name = ""
+  position = ""
+  hrs_worked = 0
+  rate_p_hr = 0
 
-name = input("Enter employee's name: ")
-position = input("Enter employee's position: ")
-hrs_worked = int(input("Enter hours worked by employee: "))
-rate_p_hr = int(input("Enter employee's rate per hour worked: "))
+  name = input("Enter employee's name: ")
+  position = input("Enter employee's position: ")
+  hrs_worked = int(input("Enter hours worked by employee: "))
+  rate_p_hr = int(input("Enter employee's rate per hour worked: "))
 
-salary = str(hrs_worked * rate_p_hr)
+  salary = str(hrs_worked * rate_p_hr)
 
-print(name+" is a "+position+" and has earned a salary of $"+salary)
+  print(name+" is a "+position+" and has earned a salary of $"+salary)
+payroll()
+print(name)
