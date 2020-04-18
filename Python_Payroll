@@ -1,21 +1,21 @@
 name = "John Smith"
+list = [0]
 print(name)
+print(list)
 
-def payroll():
-  name = ""
+def payroll(hrs_worked):
   position = ""
-  hrs_worked = 0
   rate_p_hr = 0
 
   name = input("Enter employee's name: ")
   position = input("Enter employee's position: ")
-  hrs_worked = int(input("Enter hours worked by employee: "))
+  hrs_worked += [input("Enter hours worked by employee: ")]
   rate_p_hr = int(input("Enter employee's rate per hour worked: "))
 
-  salary = str(hrs_worked * rate_p_hr)
+  salary = str(int(hrs_worked[1]) * rate_p_hr)
 
   print(name+" is a "+position+" and has earned a salary of $"+salary)
   
-payroll()
-
+payroll(list)
 print(name)
+print(list)
